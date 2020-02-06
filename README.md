@@ -50,5 +50,5 @@ On your init script, you can add something like
 
     case "$1" in
         reboot) /bin/kill -s QUIT 1 ;;
-	poweroff) /bin/kill -s USR2 1 ;;
+        poweroff) /bin/kill -s USR2 1 ;;
     esac
