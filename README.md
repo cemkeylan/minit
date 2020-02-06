@@ -52,3 +52,5 @@ On your init script, you can add something like
         reboot) /bin/kill -s QUIT 1 ;;
         poweroff) /bin/kill -s USR2 1 ;;
     esac
+
+[1]: https://git.suckless.org/sinit
