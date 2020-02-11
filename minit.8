@@ -1,0 +1,32 @@
+.
+.TH "MINIT" "8" "February 2020" "Cem Keylan" "Init System Manual"
+.
+.SH "NAME"
+\fBminit\fR \- mini init daemon
+.
+.SH "DESCRIPTION"
+minit is an init daemon with simple halting capabilities. It only runs as pid 1, and listens for signals upon being started.
+.
+.SH "SIGNAL HANDLING"
+minit will respond to the following signals:
+.
+.P
+USR1 \- Runs the compiled poweroff function
+.
+.P
+INT \- Runs the compiled reboot function
+.
+.P
+USR2 \- Requests poweroff from the kernel (Halts)
+.
+.P
+QUIT \- Requests reboot from the kernel (Halts)
+.
+.SH "AUTHORS"
+Cem Keylan \- <\fIcem@ckyln.com\fR>
+.
+.SH "BUGS"
+If you encounter any bugs, please report them\.
+.
+.SH "SEE ALSO"
+sinit(8), getty(8)
