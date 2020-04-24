@@ -1,8 +1,11 @@
 minit - mini init
 =================
 
-A small init daemon inspired by sinit[1]
+A small init daemon forked from [sinit]
 with basic halting capabilities.
+
+It is considered complete and stable, and will not
+be worked upon.
 
 Building and installing
 -----------------------
@@ -53,4 +56,4 @@ On your init script, you can add something like
         poweroff) /bin/kill -s USR2 1 ;;
     esac
 
-[1]: https://git.suckless.org/sinit
+[sinit]: https://git.suckless.org/sinit
